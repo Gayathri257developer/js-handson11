@@ -1,5 +1,5 @@
 body{
-    backgroud-color: lightblue;
+    background-color: lightblue;
 }
 .container{
     display: flex;
@@ -11,19 +11,22 @@ body{
 }
 select{
     width: 200px;
+    height: 30px;
 }
 #update{
     border: 1px solid  green;
-    background-color: chartreuse;
     margin: 20px;
-    padding: 5px 30px;
+    padding: 5px 40px;
 }
 form{
-    float: center;
-    border: 1px solid red;
+    padding-top: 10px;
+    width: 50%;
+    height: 250px;
+    text-align: center;
+    border: 2px solid red;
 }
 button{
-    background-color: orange;
-    padding: 15px 20px;
+    background-color: rgb(217, 0, 255);
+    padding: 15px;
     color: white;
 }
