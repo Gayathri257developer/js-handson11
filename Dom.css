@@ -1,3 +1,6 @@
+body{
+    backgroud-color: lightblue;
+}
 .container{
     display: flex;
 }
@@ -14,4 +17,13 @@ select{
     background-color: chartreuse;
     margin: 20px;
     padding: 5px 30px;
+}
+form{
+    float: center;
+    border: 1px solid red;
+}
+button{
+    background-color: orange;
+    padding: 15px 20px;
+    color: white;
 }
