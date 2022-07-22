@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Dom.css">
+    <title>DOM</title>
+</head>
+<body>
+
+    <!-- 1. Write the code to access element which is having id as "text" -->
+
+    <p id="text">  </p>
+
+    <!-- 2. Write the code to access element which is having tag as "h1" -->
+
+    <h1> </h1>
+
+    <!-- 3. Write the code to access element which is having class as "box" -->
+
+    <p class="box"> </p>
+
+    <!-- 4. "<h1>Hello </h1> Change the heading from ""Hello"" to ""Hello World"" using DOM functions" -->
+
+   <h1> Hello </h1>
+  
+ <!-- 5. Create three cards on HTML page and arrange them using flex property in row or horizontal direction and also create button at the bottom named "Change Flex direction". When user clicks on this button, the cards arrangement should be changed to vertical direction. -->
+
+    <div class="container" id="click">
+        <div class="box1">
+        </div>
+        <div class="box1"></div>
+        <div class="box1"></div>
+    </div>
+    <br>
+    <button onclick="direction()">click</button>
+
+
+ <!-- 6. What’s the difference between window vs document? -->
+
+   <table border="1px" width="100%">
+    <tr>
+      <th>Document</th>
+      <th>Window</th>
+    </tr>
+      
+    <tr>
+        <td>it represents any HTML document or web page that is loaded in the browser.</td>
+        <td>it represents browser window that displays the contents of the webpage.</td>
+    </tr>
+    <tr>
+        <td>it is loaded inside the window.</td>
+        <td>it is the very first object that is loaded in the window.</td>
+    </tr>
+    <tr>
+        <td>we can access the document from a window using the "window.document"</td>
+        <td>we can access the window from a window using the "window.window" or "window.alert"</td>
+    </tr>
+    <tr>
+        <td>the document is part of BOM and DOM.</td>
+        <td>the window is part of BOM, not DOM</td>
+    </tr>
+ 
+   </table>
+
+
+
+<!-- 7. "<h1>Hello </h1>
+ Add one style attribute and give text color as red and id attribute and give the id value as ""heading"" in the above given h1 tag using DOM functions" -->
+
+ <h1>HELLO</h1>
+ <button onclick="set()">set</button>
+
+<!-- 8. Create an HTML page having content as Hello world and a button named Replace Text. When user will click on this button page content should be changed to "Welcome to Elevation academy" -->
+
+<h1> Hello World ! </h1>
+  <button onclick="change()"> Replace </button> 
+   <br>
+   <br>
+
+<!-- 9. Write code to implement timer clock using JS -- display HH:MM:SS -- the time should keep updating every second -->
+
+<span id="clock" onload="timerClock()"> </span>
+
+<br><br>
+<!-- 10. Create a select drop down for selecting Year 20-21, 21-22 etc. Print the item text selected -->
+
+<select name="year" id="setyear">
+    <option value="yr">Select</option>
+    <option value="year1">20-21</option>
+    <option value="year2">21-22</option>
+    <option value="year3">22-23</option>
+</select>
+<span id="update"> 
+    
+</span>
+<button id="yr" onclick="setYear()"> Get Year</button>
+<br><br>
+<!--11. "Create a form having name ,email, phone no. , birth year 
+//Add validations - phone no. should start with 91 , it should be 10 digits email should be domain prepbytes.com 
+birth year should be > 95" -->
+ 
+ <form action="" name="form1">
+        <label for="name">Name: </label>
+        <input type="text" name="nm" id="name" > <br><br>
+
+        <label for="email">Email: </label>
+        <input type="email" name="text2" id="email" required><br><br>
+
+        <label for="phn">Phone Number : </label>
+        <input type="tel" name="text1" id="phonenumber" maxlength="12" > </br></br>
+
+        <label for="dob">Birth : </label>
+        <input type="date" name="year" id="year" min="1995-01-01" max="2022-12-31"/><br><br>
+
+        <button type="submit" onclick="validate()">Submit</button>
+</form>
+
+
+<br><br><br><br>
+
+    <script src="DOM.js"></script>
+</body>
+</html>
